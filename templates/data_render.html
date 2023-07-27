@@ -9,7 +9,10 @@
     <center>
         <h1>Welcome To SemiDynamic Webpage</h1>
         <h1>Student Name Is {{name}}</h1>
-        <h1>Student Age Is {{age}}</h1>
+        
+{% if age > 10 %}
+    <h1>Student Age Is {{age}}</h1>
+{% endif %}
     </center>
 </body>
 </html>
