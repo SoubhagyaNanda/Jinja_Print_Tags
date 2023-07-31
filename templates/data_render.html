@@ -10,9 +10,11 @@
         <h1>Welcome To SemiDynamic Webpage</h1>
         <h1>Student Name Is {{name}}</h1>
         
-{% if age > 10 %}
-    <h1>Student Age Is {{age}}</h1>
-{% endif %}
+        {% if age > 10 %}
+            <h1>Student Age Is {{age}}</h1>
+        {% endif %}
+
+        <a href="{% url 'cond' %}"><button style="background-color:black; color: white; height: 30px; width: 110px; border-radius: 20px;">cond page</button></a>
     </center>
 </body>
 </html>

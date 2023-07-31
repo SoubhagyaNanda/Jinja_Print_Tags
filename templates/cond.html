@@ -7,7 +7,12 @@
 </head>
 <body>
     <center>
-        <h1>Welcome To Jinja If Else Condition</h1>
+        <h1>Welcome To </h1>
+        <h1> Jinja If Else Condition </h1>
+        <h1> For Looping </h1>
+        <h1> URL Navigation </h1>
+        
+        <!-- IF CONDITION -->
 
         <!-- {% if A > B %}
             <h1>If Block</h1>
@@ -17,6 +22,10 @@
             <h1>Else Block</h1>
             <h1>B is Highest {{B}}</h1>
         {% endif %} -->
+
+
+
+        <!-- IF_ELIF_ELSE CONDITION -->
 
         <!-- {% if A > B and A > C %}
             <h1>If Block</h1>
@@ -31,7 +40,11 @@
             <h1>C Is Highest {{C}}</h1>
         {% endif %} -->
 
-        {% if A > B %}
+
+
+        <!-- NASTED IF_ELSE_CONDITION -->
+
+        <!-- {% if A > B %}
             {% if A > C %}
                 <h1>If Block</h1>
                 <h1>A Is Highest {{A}}</h1>
@@ -48,7 +61,16 @@
                 <h1>Else Block</h1>
                 <h1>C Is Highest {{C}}</h1>
             {% endif %}
-        {% endif %}
+        {% endif %} -->
+
+
+        <!-- FOR LOOP -->
+        
+        {% for i in name %}
+            <h1>{{i}}</h1>
+        {% endfor %}
+
+        <a href="{% url 'data_render' %}"><button style="background-color: black; color:white; height: 30px;width: 110px; border-radius:20px;">Data_Render</button></a>
     </center>
 </body>
 </html>
