@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja Page2</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome To Jinja If Else Condition</h1>
+
+        <!-- {% if A > B %}
+            <h1>If Block</h1>
+            <h1>A is Highest {{A}}</h1>
+
+        {% else %}
+            <h1>Else Block</h1>
+            <h1>B is Highest {{B}}</h1>
+        {% endif %} -->
+
+        <!-- {% if A > B and A > C %}
+            <h1>If Block</h1>
+            <h1>A Is Highest {{A}}</h1>
+
+        {% elif B > C %}
+            <h1>Elif Block</h1>
+            <h1>B Is Highest {{B}}</h1>
+        
+        {% else %}
+            <h1>Else Block</h1>
+            <h1>C Is Highest {{C}}</h1>
+        {% endif %} -->
+
+        {% if A > B %}
+            {% if A > C %}
+                <h1>If Block</h1>
+                <h1>A Is Highest {{A}}</h1>
+            {% else %}
+                <h1>Else Block</h1>
+                <h1>C Is Highest {{C}}</h1>
+            {% endif %}
+
+        {% else %}
+            {% if B > C %}
+                <h1>If Block</h1>
+                <h1>B is Highest {{B}}</h1>
+            {% else %}
+                <h1>Else Block</h1>
+                <h1>C Is Highest {{C}}</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
